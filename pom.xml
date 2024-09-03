@@ -14,17 +14,12 @@
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <lombok.version>1.18.22</lombok.version>
-        <keycloak.version>22.0.1</keycloak.version>
+        <lombok.version>1.18.30</lombok.version>
+        <keycloak.version>25.0.1</keycloak.version>
         <auto-service.version>1.0.1</auto-service.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
 
         <dependency>
             <groupId>org.keycloak</groupId>
@@ -70,6 +65,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
                 <configuration>
                     <archive>
                         <!-- This is required since we need to add the jboss module references
